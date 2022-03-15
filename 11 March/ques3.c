@@ -1,4 +1,4 @@
-// Take 2 values and swap them
+// Take  values and swap them
 
 #include <stdio.h>
 int main()
