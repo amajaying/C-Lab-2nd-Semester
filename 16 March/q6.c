@@ -3,12 +3,14 @@
 #include <stdio.h>
 int main()
 {
-    float a;
-    scanf("%f", &a);
+    float num, a;
+    int integer;
+    printf("\n enter a number with 2 decimal digit:");
+    scanf("\n%f", &num);
+    integer = num;
+    a = (num - integer);
     int b = a;
-    printf("Integer part: %d", b);
-    float d = b;
-    int c = (a - d) * 100;
-    int s = c;
-    printf("\n After decimal part: %d", s);
+    printf("\n number=%f", num);
+    printf("\n integer part=%i", integer);
+    printf("\n decimal part=%f", b);
 }
