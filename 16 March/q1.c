@@ -1,7 +1,8 @@
 #include <stdio.h>
 int main()
 {
-    float a = 23.2323233;
+    char a = 'A';
+
     // scanf("%i", &a);
-    printf("%7.3f", a);
+    printf("%c", a);
 }
