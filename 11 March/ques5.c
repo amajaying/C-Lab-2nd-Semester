@@ -1,4 +1,4 @@
-// take 3 nos
+// take 3 nos and swap them
 
 #include <stdio.h>
 int main()
