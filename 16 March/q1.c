@@ -1,8 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int a = 2, b = 3, c = 4;
-    swap(a, c);
-    swap(b, c);
-    printf("%d %d %d", a, b, c);
+    float a = 23.2323233;
+    // scanf("%i", &a);
+    printf("%7.3f", a);
 }

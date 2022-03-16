@@ -3,9 +3,9 @@
 int main()
 {
     int y, m, d;
-    printf("Enter your age in y m d format: ");
-    scanf("%d%d%d", &y, &m, &d);
+    printf("Enter your DOB in y m d format: ");
+    scanf("%d/%d/%d", &y, &m, &d);
+    int cy = 2022, cm = 3, cd = 16;
 
-    int days = y * 365 + m * 30 + d;
-    printf("The age in days is: %d", days);
+    // printf("The age in days is: %d", days);
 }
