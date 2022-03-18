@@ -9,10 +9,8 @@ int main()
     int left = num / 1000;
     int right = num % 10;
     int middle = (num / 10) % 100;
-    // multiplying
-    int mul = left * right;
-    // substracting
-    int result = middle - mul;
+    // multiplying and substracting
+    int result = middle - (left * right);
     printf("Result: %d", result);
     return 0;
 }
