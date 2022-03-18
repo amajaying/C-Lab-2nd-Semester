@@ -8,8 +8,7 @@ int main()
     // finding left, right and middle nos
     int left = num / 1000;
     int right = num % 10;
-    int middle = num / 10;
-    middle = middle % 100;
+    int middle = (num / 10) % 100;
     // multiplying
     int mul = left * right;
     // substracting
