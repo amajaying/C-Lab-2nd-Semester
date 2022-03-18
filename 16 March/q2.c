@@ -6,11 +6,9 @@ int main()
     printf("Enter a 5 digit number: ", a);
     scanf("%d", &a);
     int s1 = a % 100;
-    int s2 = a / 100;
-    s2 = s2 % 10;
+    int s2 = (a / 100) % 10;
     int s3 = a / 1000;
 
-    printf("%d", s1);
-    printf("%d", s2);
-    printf("%d", s3);
+    int result = s1 * 1000 + s2 * 100 + s3;
+    printf("%d", result);
 }

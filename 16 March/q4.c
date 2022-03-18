@@ -6,7 +6,7 @@ int main()
     int a;
     scanf("%d", &a);
 
-    // to print 4 3 2 1
+    // to print 4 3 2 1 each in new line
     int rev1 = a % 10;
     printf("%d\n", rev1);
 
@@ -20,6 +20,6 @@ int main()
     printf("%d\n", rev4);
 
     // to print 1 2 3 4
-    printf("nextline");
+    printf("\nnextline");
     printf("\n%d\n%d\n%d\n%d", rev4, rev3, rev2, rev1);
 }
