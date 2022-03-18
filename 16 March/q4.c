@@ -20,6 +20,6 @@ int main()
     printf("%d\n", rev4);
 
     // to print 1 2 3 4
-    printf("\nnextline");
+    printf("\nnextline\n");
     printf("\n%d\n%d\n%d\n%d", rev4, rev3, rev2, rev1);
 }

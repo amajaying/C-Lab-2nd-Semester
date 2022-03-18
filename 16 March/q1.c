@@ -12,6 +12,6 @@ int main()
     scanf("%o", &c);
 
     printf("for %d, Decimal = %d, Octal = %o, Hexa = %x\n\n", a, a, a, a);
-    printf("for %d, Decimal = %d, Octal = %o, Hexa = %x\n\n", b, b, b, b);
-    printf("for %d, Decimal = %d, Octal = %o, Hexa = %x\n\n", c, c, c, c);
+    printf("for %x, Decimal = %d, Octal = %o, Hexa = %x\n\n", b, b, b, b);
+    printf("for %o, Decimal = %d, Octal = %o, Hexa = %x\n\n", c, c, c, c);
 }
