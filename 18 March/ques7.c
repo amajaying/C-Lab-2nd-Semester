@@ -2,12 +2,11 @@
 #include <stdio.h>
 int main()
 {
+    // taking inputs
     int a, b, c, d, e, f;
     scanf("%d%d%d%d%d%d", &a, &b, &c, &d, &e, &f);
     int max1 = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
     int max2 = (d > e) ? ((d > f) ? d : f) : ((e > f) ? e : f);
-
-    printf("\n %d %d\n", max1, max2);
 
     int max = (max1 > max2) ? max1 : max2;
 
