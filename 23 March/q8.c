@@ -2,4 +2,7 @@
 #include <stdio.h>
 int main()
 {
+    float a = 19.25;
+    float b = a >> 8;
+    printf("%i", b);
 }
