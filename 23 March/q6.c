@@ -1,4 +1,4 @@
-// take an integer and make a round off [192 => 190]
+// take an integer and make a round off [192 -> 190]
 #include <stdio.h>
 int main()
 {
