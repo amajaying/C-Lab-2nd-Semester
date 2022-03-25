@@ -2,5 +2,6 @@
 #include <stdio.h>
 int main()
 {
-    float a = 19.25;
+    float a = 19.6255;
+    printf("%0.2f", a);
 }
