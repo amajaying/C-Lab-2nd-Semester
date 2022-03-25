@@ -3,7 +3,7 @@
 int main(){
 	int h1,m1,h2,m2,h=0,m=0;
 	printf("Enter the 1st time: ");
-	scanf("%d:%d",&h1,&m1,a1);
+	scanf("%d:%d",&h1,&m1);
 	printf("Enter the 2nd time: ");
 	scanf("%d:%d",&h2,&m2);
 	
