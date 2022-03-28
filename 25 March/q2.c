@@ -1,4 +1,5 @@
 // take 2 times in __:__  and find diff also am pm
+// code not completed yet!
 #include <stdio.h>
 int main()
 {
