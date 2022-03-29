@@ -1,4 +1,6 @@
 // find 2nd largest and 3rd largest number among 4 nos
+
+// code is not completed!
 #include <stdio.h>
 
 int main()
