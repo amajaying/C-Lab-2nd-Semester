@@ -9,21 +9,19 @@ int main(){
 	scanf("%d",&w);
 	
 	float a = d/7;
-	printf("%f\n",a);
+	
 	
 	int b = a; 
-	//float x = b;
-	printf("%d\n",b);
-	float c = a-b;
-	printf("%f",c);
-	float k = c*7;
-	int r = k;
-	printf("\n%f",k);
 	
-	int z = (r+w);
-	printf("\n%d",z);
+	float c = a-b;
+	
+	float k = c*7;
+	
+	
+	int z = (k+w)-1;
+	
 	if(z>7){
-		z=z-7;
+		z=z-8;
 	}
 	
 	switch(z){
