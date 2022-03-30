@@ -10,8 +10,12 @@ int main(){
 		printf("Wrong Input");
 	}
 	
-	else if(a>10&&a<20){
+	else if(a>=10&&a<20){
 		switch(a){
+			case 10:
+				printf("ten");
+				break;
+			
 			case 11:
 				printf("Eleven");
 				break;
@@ -117,6 +121,7 @@ int main(){
 		case 9:
 			printf("nine");
 			break;
+		
 	}
 		}
 	}
