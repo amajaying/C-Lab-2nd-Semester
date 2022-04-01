@@ -1,5 +1,4 @@
-// code not completed
-
+// take two dates and times and find difference among them
 #include <stdio.h>
 int main()
 {
