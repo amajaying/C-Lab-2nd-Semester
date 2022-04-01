@@ -2,28 +2,31 @@
 #include<stdio.h>
 int main(){
 	float d;
+	long double a;
 	int m,y,w;
 	printf("Enter the date in (dd/mm/yyyy) format: ");
 	scanf("%f/%d/%d",&d,&m,&y);
 	printf("\nEnter the week of the 1st jan in that year: ");
 	scanf("%d",&w);
-	
-	float a = d/7;
-	
-	
-	int b = a; 
-	
-	float c = a-b;
-	
-	float k = c*7;
-	
-	
-	int z = (k+w)-1;
-	
-	if(z>7){
-		z=z-8;
+	if(d>=7){
+		a = d/7;
+		
+	}
+	else{
+		a = d;
 	}
 	
+	int b = a; 
+	long double c = a-b;
+	long double p = c*7;
+	
+	int k = p;
+	printf("%d\n",k);
+	int z = (k+w-1);
+	printf("%d\n",z);
+	if(z>7){
+		z=z-7;
+	}
 	switch(z){
 		case 1:
 			printf("Sunday");

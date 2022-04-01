@@ -1,128 +1,88 @@
 // find 2nd largest and 3rd largest number among 4 nos
-
-// code is not completed!
+// code not completed yet!
 #include <stdio.h>
 
 int main()
 {
-    int a, b, c, d, t, s, max, r1, r2, result;
+    int a, b, c, d, t, s, max, r1, r2, result, z1 = 0, z2 = 0;
     scanf("%d%d%d%d", &a, &b, &c, &d);
 
-    if (a > b)
-    {
-        s = a;
-    }
-    else
-    {
-        s = b;
-    }
-
-    if (c > d)
-    {
-        t = c;
-    }
-    else
-    {
-        t = d;
-    }
-
+    s = (a > b) ? a : b;
+    t = (c > d) ? c : d;
     max = (s > t) ? s : t;
 
-    if (a > b)
+    if (a > b && a == max)
     {
-        if (a == max)
-        {
-            r1 = b;
-        }
-        else
-        {
-            r1 = a;
-        }
+        r1 = b;
+    }
+    else if (b > a && b == max)
+    {
+        r1 = a;
+    }
+    else if (a > b)
+    {
+        r1 = a;
     }
     else
     {
-        if (b == max)
-        {
-            r1 = a;
-        }
-        else
-        {
-            r1 = b;
-        }
+        r1 = b;
     }
 
-    if (c > d)
+    if (c > d && c == max)
     {
-        if (c == max)
-        {
-            r2 = d;
-        }
-        else
-        {
-            r2 = c;
-        }
+        r2 = d;
+    }
+    else if (d > c && d == max)
+    {
+        r2 = c;
+    }
+    else if (c > d)
+    {
+        r2 = c;
     }
     else
     {
-        if (d == max)
-        {
-            r2 = c;
-        }
-        else
-        {
-            r2 = d;
-        }
+        r2 = d;
     }
 
     result = (r1 > r2) ? r1 : r2;
     printf("2nd largest number = %d", result);
 
-    if (a > b)
+    if (a == max && b == result)
     {
-        if (a == max || a == result)
-        {
-            r1 = b;
-        }
-        else
-        {
-            r1 = a;
-        }
+        z1 = c;
+        z2 = d;
     }
-    else
+    if (a == max && c == result)
     {
-        if (b == max || b == result)
-        {
-            r2 = a;
-        }
-        else
-        {
-            r2 = b;
-        }
+        z1 = b;
+        z2 = d;
     }
 
-    if (c > d)
+    if (a == max && d == result)
     {
-        if (c == max)
-        {
-            r1 = d;
-        }
-        else
-        {
-            r1 = c;
-        }
+        z1 = b;
+        z2 = c;
     }
-    else
+    if (b == max && c == result)
     {
-        if (d == max)
-        {
-            r2 = c;
-        }
-        else
-        {
-            r2 = d;
-        }
+        z1 = a;
+        z2 = d;
     }
 
-    result = (r1 < r2) ? r1 : r2;
+    if (b == max && d == result)
+    {
+        z1 = a;
+        z2 = c;
+    }
+
+    if (d == max && c == result)
+    {
+        z1 = a;
+        z2 = b;
+    }
+
+    printf("\n%d%d", z1, z2);
+    result = (z1 > z2) ? z1 : z2;
     printf("\nThird largest = %d", result);
 }
