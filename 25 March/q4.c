@@ -10,12 +10,12 @@ int main()
 
     if (ap1 == 0)
     {
-        h1 = +12;
+        h1 += 12;
     }
 
     if (ap2 == 0)
     {
-        h2 = +12;
+        h2 += 12;
     }
 
     if (y1 < y2)
@@ -55,7 +55,7 @@ int main()
     else
     {
         min1 = +60;
-        h1 = -1;
+        h1 -= 1;
         nmin = min1 - min2;
     }
     if (h1 > h2)
@@ -64,8 +64,8 @@ int main()
     }
     else
     {
-        h1 = +24;
-        d1 = -1;
+        h1 += 24;
+        d1 -= 1;
         nhr = h1 - h2;
     }
 
@@ -75,8 +75,8 @@ int main()
     }
     else
     {
-        d1 = +30;
-        m1 = -1;
+        d1 += 30;
+        m1 -= 1;
         nd = d1 - d2;
     }
 
@@ -86,8 +86,8 @@ int main()
     }
     else
     {
-        m1 = +12;
-        y1 = -1;
+        m1 += 12;
+        y1 -= 1;
         nm = m1 - m2;
     }
 
@@ -96,5 +96,5 @@ int main()
         ny = y1 - y2;
     }
 
-    printf("Year = %d, Month = %d, Days= %d, Time: %d:%d", ny, nm, nd, nhr, nmin);
+    printf("\nThe difference is: Year = %d, Month = %d, Days= %d, Time: %d:%d", ny, nm, nd, nhr, nmin);
 }
