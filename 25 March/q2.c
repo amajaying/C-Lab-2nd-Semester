@@ -83,7 +83,5 @@ int main()
             printf("The difference is %d min", min_diff);
         }
     }
-    printf("%d,%d", nhr1, nhr2);
-
     return 0;
 }
