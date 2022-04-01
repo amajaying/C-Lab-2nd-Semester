@@ -1,5 +1,4 @@
 // find 2nd largest and 3rd largest number among 4 nos
-// code not completed yet!
 #include <stdio.h>
 
 int main()
@@ -48,41 +47,40 @@ int main()
     result = (r1 > r2) ? r1 : r2;
     printf("2nd largest number = %d", result);
 
-    if (a == max && b == result)
+    if ((a == max && b == result) || (a == result && b == max))
     {
         z1 = c;
         z2 = d;
     }
-    if (a == max && c == result)
+    else if ((a == max && c == result) || (a == result && c == max))
     {
         z1 = b;
         z2 = d;
     }
 
-    if (a == max && d == result)
+    else if ((a == max && d == result) || (a == result && d == max))
     {
         z1 = b;
         z2 = c;
     }
-    if (b == max && c == result)
+    else if ((b == max && c == result) || (b == result && c == max))
     {
         z1 = a;
         z2 = d;
     }
 
-    if (b == max && d == result)
+    else if ((b == max && d == result) || (b == result && d == max))
     {
         z1 = a;
         z2 = c;
     }
 
-    if (d == max && c == result)
+    else if ((d == max && c == result) || (d == result && c == max))
     {
         z1 = a;
         z2 = b;
     }
 
-    printf("\n%d%d", z1, z2);
     result = (z1 > z2) ? z1 : z2;
     printf("\nThird largest = %d", result);
 }
