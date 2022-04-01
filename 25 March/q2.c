@@ -1,4 +1,4 @@
-// take 2 times in __:__  and find diff also am pm
+// take 2 times in HH:MM  and find diff also am pm
 #include <stdio.h>
 int main()
 {
@@ -8,7 +8,6 @@ int main()
     printf("Enter the 2nd time (HH:MM) with (AM =1 and PM =0): ");
     scanf("%d:%d%d", &hr2, &min2, &ap2);
 
-    // Condition for AM PM
     if (hr1 == 12)
     {
         hr1 -= 12;
@@ -21,6 +20,7 @@ int main()
     {
         nhr1 = hr1 + 12;
     }
+    // Condition for AM PM
     if (ap2 == 0)
     {
         nhr2 = hr2 + 12;

@@ -7,6 +7,7 @@ int main()
     int c = 0;
     int nd = 0, nm = 0, ny = 0, nhr = 0, nmin = 0;
 
+    // for AM PM condition
     if (ap1 == 0)
     {
         h1 += 12;
@@ -17,6 +18,7 @@ int main()
         h2 += 12;
     }
 
+    // checking which one is earlier
     if (y1 < y2)
     {
         c++;
@@ -47,6 +49,7 @@ int main()
         printf("%d/%d/%d, %d:%d is earlier.", d2, m2, y2, h2, min2);
     }
 
+    // calculation starts
     if (min1 > min2)
     {
         nmin = min1 - min2;

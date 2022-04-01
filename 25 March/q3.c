@@ -6,10 +6,12 @@ int main()
     int a, b, c, d, t, s, max, r1, r2, result, z1 = 0, z2 = 0;
     scanf("%d%d%d%d", &a, &b, &c, &d);
 
+    // finding max among a,b,c,d
     s = (a > b) ? a : b;
     t = (c > d) ? c : d;
     max = (s > t) ? s : t;
 
+    // for 2nd largest number
     if (a > b && a == max)
     {
         r1 = b;
@@ -46,6 +48,8 @@ int main()
 
     result = (r1 > r2) ? r1 : r2;
     printf("2nd largest number = %d", result);
+
+    // now for 3rd largest
 
     if ((a == max && b == result) || (a == result && b == max))
     {
