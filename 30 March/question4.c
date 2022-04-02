@@ -2,84 +2,90 @@
 #include <stdio.h>
 int main()
 {
-	int day, mon, yr;
-	printf("Enter the date in day/mon/yr format : ");
-	scanf("%d/%d/%d", &day, &mon, &yr);
-	printf("Enter the week of the 1st jan in that year: ");
-	// enter 0 for Sunday, 1 for Monday, 2 for Tuesday, 3 for Wednesday, 4 for Thursday and so on..
-	int jan;
-	scanf("%d", &jan);
-	int nd = jan - 1;
+	int day, mon, year;
+	int dd;
+	int t = 0;
+	int feb;
+	printf("Enter the date in (dd/mm/yr) format: ");
+	scanf("%d/%d/%d", &day, &mon, &year);
+	printf("Enter the day of 1st Jan of that year (1 for sunday and so on): ");
+	scanf("%d", &dd);
+
+	// condition for leap year
+	if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
+	{
+		feb = 29;
+	}
+	else
+	{
+		feb = 28;
+	}
+
+	// now adding days of months
 	switch (mon)
 	{
 	case 2:
-		nd += 3;
+		t = 31;
 		break;
 	case 3:
-		nd = nd;
+		t = 31 + feb;
 		break;
 	case 4:
-		nd += 3;
+		t = (31 * 2) + feb;
 		break;
 	case 5:
-		nd += 2;
+		t = (31 * 2) + feb + 30;
 		break;
 	case 6:
-		nd += 3;
+		t = (31 * 3) + feb + 30;
 		break;
 	case 7:
-		nd += 2;
+		t = (31 * 3) + feb + (30 * 2);
 		break;
 	case 8:
-		nd += 3;
+		t = (31 * 4) + feb + (30 * 2);
 		break;
 	case 9:
-		nd += 3;
+		t = (31 * 5) + feb + (30 * 2);
 		break;
 	case 10:
-		nd += 2;
+		t = (31 * 5) + feb + (30 * 3);
 		break;
 	case 11:
-		nd += 3;
+		t = (31 * 6) + feb + (30 * 3);
 		break;
 	case 12:
-		nd += 2;
+		t = (31 * 6) + feb + (30 * 4);
 		break;
 	}
-	nd += day;
-	printf("%d\n", nd);
-	int res = nd % 7;
-	printf("%d", res);
-
-	switch (res)
+	t = (t + day) % 7;
+	t = t + dd - 1;
+	if (t > 7)
+		t = t - 7;
+	switch (t)
 	{
-	case 0:
+	case 1:
 		printf("Sunday");
 		break;
-
-	case 1:
+	case 2:
 		printf("Monday");
 		break;
-
-	case 2:
+	case 3:
 		printf("Tuesday");
 		break;
-
-	case 3:
+	case 4:
 		printf("Wednesday");
 		break;
-
-	case 4:
+	case 5:
 		printf("Thursday");
 		break;
-
-	case 5:
+	case 6:
 		printf("Friday");
 		break;
-
-	case 6:
+	case 7:
 		printf("Saturday");
 		break;
 	}
+
 	return 0;
 }
