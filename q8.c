@@ -2,12 +2,12 @@
 #include<stdio.h>
 int main(){
 	int n;
-	int sum = 1;
+	int fact = 1;
 	printf("Enter a number: ");
 	scanf("%d",&n);
 	while(n>=1){
-		sum = sum * n;
+		fact = fact * n;
 		n--;
 	}
-	printf("sum is: %d",sum);
+	printf("Factorial is: %d",fact);
 	}
