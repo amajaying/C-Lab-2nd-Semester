@@ -11,7 +11,6 @@ int main(){
 	while(b<c){
 		printf("\t");
 		b+=1;
-		
 		}
 	
 	b=1;
@@ -22,6 +21,5 @@ int main(){
 		}
 		b++;
 		c++;
-		
 		}
 }

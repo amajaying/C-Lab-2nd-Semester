@@ -39,9 +39,5 @@ int main(){
 	
 	}
 
-	printf("%d.00",d);
-	
-		
-	
-	
+	printf("%d.00",d);	
 }
