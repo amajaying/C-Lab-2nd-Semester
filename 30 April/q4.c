@@ -8,13 +8,18 @@ int main(){
 	for(int i = 0; i<a;i++){
 		for(int j=0; j<b; j++){
 			scanf("%d",&arr[i][j]);
-			}
-		}
-	for(int i =0; i
-	
-	for(int i = 0; i<=2; i++){
-		for(int j = i; j<=2; j++){
-			printf("%d\t",arr[i][j]);
-			}
 		}
 	}
+	int c = 0;
+	for(int i = 0; i<=2; i++){
+		for(int k=0;k<c;k++){
+			printf(" ");
+		}
+		c++;
+		
+		for(int j = i; j<=2; j++){	
+			printf("%d",arr[i][j]);
+		}	
+		printf("\n");
+	}
+}
