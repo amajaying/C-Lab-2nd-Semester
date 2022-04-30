@@ -11,13 +11,13 @@ int main(){
 		}
 	}
 	int c = 0;
-	for(int i = 0; i<=2; i++){
+	for(int i = 0; i<b; i++){
 		for(int k=0;k<c;k++){
 			printf(" ");
 		}
 		c++;
 		
-		for(int j = i; j<=2; j++){	
+		for(int j = i; j<b; j++){	
 			printf("%d",arr[i][j]);
 		}	
 		printf("\n");
