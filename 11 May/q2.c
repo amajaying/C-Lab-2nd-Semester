@@ -9,9 +9,8 @@ int main(){
         i++;
     }
     b = i+1;
-    printf("%d",b);
 
-    for (int i=5;a[i]!='\0';i++){
+    for (int i=b;a[i]!=' ';i++){
         printf("%c",a[i]);
     }
     
