@@ -13,7 +13,7 @@ int minmax(int x, int y, int z, int *max)
     {
         *max = z;
     }
-    int min = 0;
+    int min;
     if (x < y && x < z)
     {
         min = x;
