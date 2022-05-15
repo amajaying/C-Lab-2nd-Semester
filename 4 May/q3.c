@@ -1,3 +1,4 @@
+// Take 2 pointers pointing to 2 variables. Interchange their values using pointers.
 #include<stdio.h>
 int main(){
     int a,b,*y,*z,temp;

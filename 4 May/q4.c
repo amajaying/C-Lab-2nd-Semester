@@ -1,3 +1,4 @@
+// Create 3 variables pointed by 3 pointers using pointer, find min among 3.
 #include<stdio.h>
 int main(){
     int a,b,c,*x,*y,*z, g;
@@ -7,15 +8,15 @@ int main(){
     y=&b;
     z=&c;
 
-    if((*x>*y)&&(*x>*z)){
+    if((*x<*y)&&(*x<*z)){
         g = *x;
     }
-    else if((*y>*z)&&(*y>*x)){
+    else if((*y<*z)&&(*y<*x)){
         g = *y;
     }
     else{
         g=*z;
     }
 
-    printf("Greatest: %d\n", g);
+    printf("Minimum: %d\n", g);
 }

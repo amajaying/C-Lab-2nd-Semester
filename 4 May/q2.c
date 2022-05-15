@@ -1,3 +1,4 @@
+// Create a triple pointers and display all the related values.
 #include<stdio.h>
 int main()
 {

@@ -1,3 +1,4 @@
+// Create pointers pointing to different types of data through the pointers. You need to fill the data and display the data.
 #include<stdio.h>
 int main(){
     int a;
