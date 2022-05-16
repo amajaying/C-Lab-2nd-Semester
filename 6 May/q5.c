@@ -1,3 +1,4 @@
+// to swap the set of 4 numbers diagonally of a 4x4 matrix 
 #include<stdio.h>
 int main(){
     int a[4][4];

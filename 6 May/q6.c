@@ -1,3 +1,4 @@
+// to add the set of 4 numbers of a 4x4 matrix 
 #include <stdio.h>
 int main()
 {
