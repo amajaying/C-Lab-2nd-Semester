@@ -1,3 +1,4 @@
+// Create the given pattern
 #include<stdio.h>
 int main(){
     char b[6]="ABCPD";

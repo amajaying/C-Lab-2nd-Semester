@@ -3,5 +3,5 @@
 int main(){
     char a[20];
     scanf("%[^\n]s",a);
-    print("%s",a);
+    printf("%s",a);
 }
