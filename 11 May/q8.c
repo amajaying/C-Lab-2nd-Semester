@@ -13,8 +13,9 @@ int fibo(int a){
     t1 = t2;
     t2 = nextTerm;
     nextTerm = t1 + t2;
+    }
 }
-}
+
 int main(){
     int a;
     printf("Enter the nth number: ");
