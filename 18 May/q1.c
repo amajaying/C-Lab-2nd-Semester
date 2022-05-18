@@ -1,3 +1,4 @@
+// Write a Recursive funtion to display all the integers present in an array.
 #include<stdio.h>
 int dis(int *c, int start, int len){
     if(start>len){
