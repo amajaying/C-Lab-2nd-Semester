@@ -21,6 +21,7 @@ int main(){
     printf("Enter the nth number: ");
 
     fibo(a);
+    return 0;
 }
 
 

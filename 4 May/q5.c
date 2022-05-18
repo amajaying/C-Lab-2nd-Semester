@@ -11,5 +11,5 @@ int main(){
     printf("%d",b[j]);
   }  
   
-  
+  return 0;
 }

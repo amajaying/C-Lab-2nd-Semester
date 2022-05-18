@@ -15,4 +15,5 @@ int main(){
     int n;
     scanf("%d",&n);
     printf("%d",fact(n));
+    return 0;
 }

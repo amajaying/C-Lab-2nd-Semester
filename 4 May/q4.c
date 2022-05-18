@@ -19,4 +19,5 @@ int main(){
     }
 
     printf("Minimum: %d\n", g);
+    return 0;
 }

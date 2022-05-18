@@ -42,4 +42,5 @@ int main()
 
     printf("%d %d\n",a,d);
     printf("%d %d",b,c);
+    return 0;
 }

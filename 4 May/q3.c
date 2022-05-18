@@ -13,5 +13,5 @@ int main(){
     *z = temp;
 
     printf("%d\t%d\n", a,b);
-
+    return 0;
 }

@@ -24,12 +24,12 @@ int patt(int r, char t, char l){
 
 int main(){
     int r,c;
-    patt(4,'*','d');
+    patt(4,'*','u');
     printf("ABC\n");
     patt(3,'#','u');
     printf("DEF");
     patt(3,'=','d');
     printf("pqr\n");
     patt(2,'*','u');
-
+    return 0;
 }

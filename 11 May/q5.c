@@ -17,5 +17,6 @@ int main(){
             a[i]=a[i]+32;
         }
     }
-printf("%s",a);
+    printf("%s",a);
+    return 0;
 }

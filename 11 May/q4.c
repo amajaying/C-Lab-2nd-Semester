@@ -21,5 +21,5 @@ int main(){
             {
                 printf("%c",a[j]);
             }
-
+    return 0;
 }

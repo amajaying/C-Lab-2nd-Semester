@@ -1,6 +1,6 @@
 // Take a string and display in the following format
-//  AbcD PklM nT  VPR
-// A. P. N. Vpr
+//  ABCD PKLD NT  VPR
+// Abcd P. N. Vpr
 
 #include <stdio.h>
 int main()
@@ -51,4 +51,5 @@ int main()
     {
         printf("%c", a[j]);
     }
+    return 0;
 }

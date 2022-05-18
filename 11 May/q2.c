@@ -16,5 +16,5 @@ int main(){
         c++;
     }
     printf("\nNo. of letters: %d",c);
-    
+    return 0;
 }

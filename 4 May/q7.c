@@ -1,5 +1,5 @@
 //Take a 10 size array and fill tables in following manners
-//    14 29 40 47 50 49 44 35 22 2
+//    14 29 40 47 50 49 44 35 22 5
 #include<stdio.h>
 int main(){
     int a[10]={0};
@@ -24,5 +24,5 @@ int main(){
         printf("%d ", b[i]);
     }
 
-
+    return 0;
 }

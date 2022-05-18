@@ -11,4 +11,5 @@ int main(){
         }
     }
     printf("The number of spaces: %d",spc);
+    return 0;
 }

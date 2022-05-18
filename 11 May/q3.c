@@ -11,4 +11,5 @@ int main(){
         }
     }
     printf("\nThe number of words: %d", spc+1);
+    return 0;
 }

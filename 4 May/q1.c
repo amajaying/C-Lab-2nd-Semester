@@ -11,4 +11,5 @@ int main(){
     scanf("%lf",z);
 
     printf("\n%d\n%.2f",*x,*z);
+    return 0;
 }

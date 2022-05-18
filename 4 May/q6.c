@@ -6,4 +6,5 @@ int main(){
     for (int i = 4; i>=0; i--){
         printf("%d",b[i]);
     }
+    return 0;
 }

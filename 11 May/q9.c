@@ -19,6 +19,7 @@ int main(){
     printf("Enter the nth position: ");
 
     fibo(a);
+    return 0;
 }
 
 

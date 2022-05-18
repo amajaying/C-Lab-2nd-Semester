@@ -15,4 +15,5 @@ int main(){
         b[i]=a[j];
     }
     printf("\nAfter reversing: %s", b);
+    return 0;
 }
