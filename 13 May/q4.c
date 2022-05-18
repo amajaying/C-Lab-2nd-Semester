@@ -17,7 +17,7 @@ int calc(int x[],int n, int *max, int *min){
 }
 int main(){
     int max,min;
-    int a[8]={1,2,3,4,5,6,7,8};
+    int a[8]={-12,2,99,4,5,6,7,8};
     int s = calc(a,8, &max,&min);
     printf("%d",s);
     printf("\nMax=%d",max);
