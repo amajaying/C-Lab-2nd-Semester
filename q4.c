@@ -6,14 +6,14 @@ int dis(int a, int b){
     a=b;
     b=c;
     printf("%dx+%dy\n",a,b);
-    if(a<=5){
+    if(a<8){
         dis(a,b);
     }
     return 0;
 }
 int main(){
     int a=1,b=1;
-    printf("x +y\n");
+    printf("x y\nx+y\n");
     dis(a,b);
 
 }
