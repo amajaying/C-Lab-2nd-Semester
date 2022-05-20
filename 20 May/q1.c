@@ -8,7 +8,7 @@ struct date
 
 int main(){
     struct date s;
-    scanf("%d/%d/%d",&s.day,&s.mon,&s.year);
+    scanf("%d%d%d",&s.day,&s.mon,&s.year);
     printf("%d/%d/%d",s.day,s.mon,s.year);
     
 }
