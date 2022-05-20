@@ -12,6 +12,9 @@ int calc(struct dob a){
     if(cmonth>a.month){
         return (cyear-a.year);
     }
+    else if(cmonth==a.month && cday>=a.day){
+        return (cyear-a.year);
+    }
     else{
         return (cyear-a.year-1);
     }
