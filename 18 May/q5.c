@@ -1,8 +1,5 @@
 // WARF to find the reverse of the number.
-
 #include<stdio.h>
-#include<math.h>
-
 int rev(int n,int r){
     if(n>0){
         r=r*10+n%10;
@@ -12,7 +9,6 @@ int rev(int n,int r){
         return r;
     }   
 }
-
 int main(){
     int num;
     int a;

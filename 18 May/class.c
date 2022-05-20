@@ -19,10 +19,10 @@ int main(){
 //     member variable 2;
 // }
 // Assignment operator
-struct stu s{
+struct stu{
     char name[20];
     int roll;
     int age;
     char gender;
     float cgpa;
-}
+}s;
