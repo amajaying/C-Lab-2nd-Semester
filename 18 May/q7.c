@@ -30,7 +30,10 @@ int main(){
     {
         char name[20];
         int m[3];
+        int min;
+        int max;
     }s1,s2,s3;
+
     printf("Enter the name of the student 1: ");
     scanf("%s",s1.name);
     printf("Enter the marks of the student 1 in 3 subjects: ");
@@ -63,6 +66,4 @@ int main(){
     int maxc=max(s1.max,s2.max,s3.max);
     printf("The maximum marks of the class is %d\n",maxc);
     return 0;
-
-
 }
