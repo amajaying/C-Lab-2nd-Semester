@@ -1,15 +1,16 @@
-//take a string and reverse it
+// C program to demonstrate
+// example of strrev() function
+
 #include<stdio.h>
-int main(){
-    char a[10];
-    scanf("%[^\n]s",a);
-    printf("Before reversing: %s", a);
-    char b[10];
-    
-    for(int i=0,j=8; j>=0; i++,j--){
-        b[i]=a[j];
-    }
-    printf("\nAfter reversing: %s", b);
+#include<string.h>
 
+int main()
+{
+char str[50] = "geeksforgeeks";
 
+printf("The given string is =%s\n",str);
+
+printf("After reversing string is =%s",strrev(str));
+
+return 0;
 }
