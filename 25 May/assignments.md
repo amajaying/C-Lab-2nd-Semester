@@ -1,0 +1,3 @@
+Create a structure ( roll, name, union(marks[3], CGPA)). Take such 3 student's informations and send this details to a function which will arrange these 3 students in ascending order of their mark/CGPA and return back to main where the main function has to display the details in increasing order.
+<!-- take two float values and interchange address 101 with 102 with other and 102 with 101 of other and then display both float values after interchanging. -->
+Take a teacher structure, under one teacher there are three students. We need to take 2 such teacher's information and find out the average marks secured under each teacher, Also find out the maxm marks secured by a student among these two teachers.
