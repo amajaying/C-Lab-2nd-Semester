@@ -1,9 +1,9 @@
 ## Scope of the variable
-Block<br>
-Program<br>
-Global<br>
-Function<br>
-File<br>
+- Block<br>
+- Program<br>
+- Global<br>
+- Function<br>
+- File<br>
 
 any variable with ``'static'`` cannot be used outside of the file in filescope
 
