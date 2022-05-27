@@ -20,7 +20,9 @@ any variable with ``'static'`` cannot be used outside of the file in filescope
 
 **extern specifier**<br>
 - it searches for the variable in the same file or other files.<br>
-Example: <br>``extern int a;<br>int main(){<br>printf("%d",a);<br>}<br> int a = 6``<br>
+Example: <br>``extern int a; 
+int main(){printf("%d",a);}
+int a = 6``<br>
 Output: <br> ``6``<br>
 
 
