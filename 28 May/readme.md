@@ -26,4 +26,34 @@ Memory divides into 4 parts:
 
 # File Handling
 
+# fopen
+- syntax: fopen(filename, mode); 
+- mode: r, w, a
+# fclose
 
+# fgetc
+- syntax: fgetc(file pointer);
+- read one character at a time.
+
+# fputc
+- syntax: fputc(character, file pointer);
+- write one character at a time.
+
+# fprintf
+- syntax: fprintf(file pointer, format, ...);
+- write formatted string to file.
+
+# fscanf
+- syntax: fscanf(file pointer, format, ...);
+- read formatted string from file.
+
+# fread
+- syntax: fread(buffer, size of each element, number of elements, file pointer);
+- read data from file to buffer.
+
+# fwrite
+- syntax: fwrite(buffer, size of each element, number of elements, file pointer);
+- write data from buffer to file.
+
+# to close a loop:
+if ( c == EOF ) break;
