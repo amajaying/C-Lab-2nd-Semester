@@ -1,3 +1,5 @@
+// Create a structure ( roll, name, union(marks[3], CGPA)). Take such 3 student's informations and send this details to a function which will arrange these 3 students in ascending order of their mark/CGPA and return back to main where the main function has to display the details in increasing order.
+
 #include<stdio.h>
     struct stu
     {

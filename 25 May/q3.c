@@ -1,3 +1,5 @@
+// Take a teacher structure, under one teacher there are three students. We need to take 2 such teacher's information and find out the average marks secured under each teacher, Also find out the maxm marks secured by a student among these two teachers.
+
 #include <stdio.h>
 
 struct teacher {
