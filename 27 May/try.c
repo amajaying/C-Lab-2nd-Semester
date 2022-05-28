@@ -1,7 +1,12 @@
 #include<stdio.h>
-extern int c;
+
 int main(){
-    printf("%d",c);
+    int a[]={1,2,3,4,5};
+    int *q=a;
+    int **p=&q;
+    printf("%d\n",**p);
+    --*p;
+    printf("%d\n",*p);
+
 }
 
-int c = 8;
